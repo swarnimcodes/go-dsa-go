@@ -11,6 +11,10 @@ func TestBubbleSort(t *testing.T) {
 		expected []int
 	}{
 		{
+			input:    []int{},
+			expected: []int{},
+		},
+		{
 			input:    []int{5, 2, 9, 3, 1},
 			expected: []int{1, 2, 3, 5, 9},
 		},
