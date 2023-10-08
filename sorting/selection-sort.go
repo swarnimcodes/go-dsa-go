@@ -1,8 +1,4 @@
-package main
-
-import (
-	"fmt"
-)
+package sorting
 
 // sorting the list without creating a new one
 func selectionSort(input_list []int) {
@@ -17,12 +13,4 @@ func selectionSort(input_list []int) {
 			input_list[i], input_list[jMin] = input_list[jMin], input_list[i]
 		}
 	}
-}
-
-func main() {
-	unsorted_list := []int{74, 13, 96, 31, 909}
-	selectionSort(unsorted_list)
-
-	fmt.Println("Sorted List:")
-	fmt.Println(unsorted_list) //Sorted in place
 }
